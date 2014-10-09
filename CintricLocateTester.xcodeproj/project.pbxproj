@@ -15,6 +15,7 @@
 		11CFD05B19E66E0900CA20C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11CFD05A19E66E0900CA20C7 /* Images.xcassets */; };
 		11CFD05E19E66E0900CA20C7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11CFD05C19E66E0900CA20C7 /* LaunchScreen.xib */; };
 		11CFD06A19E66E0900CA20C7 /* CintricLocateTesterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CFD06919E66E0900CA20C7 /* CintricLocateTesterTests.m */; };
+		11CFD07519E66F6900CA20C7 /* LocationUpdateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CFD07419E66F6900CA20C7 /* LocationUpdateObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		11CFD06319E66E0900CA20C7 /* CintricLocateTesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CintricLocateTesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11CFD06819E66E0900CA20C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11CFD06919E66E0900CA20C7 /* CintricLocateTesterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CintricLocateTesterTests.m; sourceTree = "<group>"; };
+		11CFD07319E66F6900CA20C7 /* LocationUpdateObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationUpdateObject.h; sourceTree = "<group>"; };
+		11CFD07419E66F6900CA20C7 /* LocationUpdateObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationUpdateObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				11CFD05A19E66E0900CA20C7 /* Images.xcassets */,
 				11CFD05C19E66E0900CA20C7 /* LaunchScreen.xib */,
 				11CFD05119E66E0900CA20C7 /* CintricLocateTester.xcdatamodeld */,
+				11CFD07319E66F6900CA20C7 /* LocationUpdateObject.h */,
+				11CFD07419E66F6900CA20C7 /* LocationUpdateObject.m */,
 				11CFD04A19E66E0900CA20C7 /* Supporting Files */,
 			);
 			path = CintricLocateTester;
@@ -222,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11CFD07519E66F6900CA20C7 /* LocationUpdateObject.m in Sources */,
 				11CFD05019E66E0900CA20C7 /* AppDelegate.m in Sources */,
 				11CFD04D19E66E0900CA20C7 /* main.m in Sources */,
 				11CFD05619E66E0900CA20C7 /* ViewController.m in Sources */,
