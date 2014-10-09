@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import <Cintric/CintricLocate.h>
 
-@interface ViewController ()
+@interface ViewController () <CintricLocateDelegate>
 
 @end
 
@@ -16,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [CintricLocate setDelegate:self];
+    
 }
 
 - (void)didReceiveMemoryWarning {
