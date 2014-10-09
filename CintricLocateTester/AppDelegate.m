@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Cintric/CintricLocate.h>
 
 @interface AppDelegate ()
 
@@ -16,6 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [CintricLocate initWithApiKey:@"YOUR_API_KEY_HERE"];
+    
     // Override point for customization after application launch.
     return YES;
 }

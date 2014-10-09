@@ -1,0 +1,6 @@
+framework module Cintric {
+  umbrella header "Cintric.h"
+
+  export *
+  module * { export * }
+}
