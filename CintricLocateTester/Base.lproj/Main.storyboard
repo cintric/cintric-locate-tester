@@ -15,11 +15,49 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1By-cF-owR">
+                                <rect key="frame" x="16" y="82" width="568" height="498"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VW2-E2-Jsh">
+                                <rect key="frame" x="235" y="36" width="130" height="30"/>
+                                <color key="backgroundColor" red="0.74838654891304346" green="0.74838654891304346" blue="0.74838654891304346" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="GBf-p3-j9b"/>
+                                    <constraint firstAttribute="height" constant="30" id="iTz-BZ-WSO"/>
+                                </constraints>
+                                <state key="normal" title="Update Location">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateLocationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKw-VW-SXI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="VW2-E2-Jsh" secondAttribute="centerX" id="8da-i8-U4a"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1By-cF-owR" secondAttribute="bottom" constant="20" id="Jm0-6l-47X"/>
+                            <constraint firstItem="1By-cF-owR" firstAttribute="top" secondItem="VW2-E2-Jsh" secondAttribute="bottom" constant="16" id="Xfm-um-Tae"/>
+                            <constraint firstItem="VW2-E2-Jsh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="h4k-I7-vFl"/>
+                            <constraint firstAttribute="trailing" secondItem="1By-cF-owR" secondAttribute="trailing" constant="16" id="nzl-Hw-JmT"/>
+                            <constraint firstItem="1By-cF-owR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="pQV-wW-rix"/>
+                            <constraint firstItem="1By-cF-owR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="q2s-Os-ADg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="q2s-Os-ADg"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="1By-cF-owR" id="KCd-5H-FEQ"/>
+                        <outlet property="updateLocationButton" destination="VW2-E2-Jsh" id="Xov-q2-Ye4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="780" y="290"/>
         </scene>
     </scenes>
 </document>
