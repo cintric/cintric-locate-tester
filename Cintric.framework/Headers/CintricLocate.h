@@ -15,14 +15,15 @@
  CintricLocate enables battery efficient location monitoring 24/7.
 
  @discussion It will handle permissions and will update even after the user has force quit the app.
- Our testing shows that our location updates will use 2% or less of a users battery on an average day.
- To use this SDK you must request an api key from http://cintric.com
+             Our testing shows that our location updates will use 2% or less of a users battery on an average day.
+             To use this SDK you must request an api key from http://cintric.com
 
  Make sure in your appDelegate application:didFinishLaunchingWithOptions: method you call
  
  @code
  [CintricLocate initWithApiKey:@"your_api_key_here"]
  @endcode
+ @see http://cintric.com/documentation
  */
 @interface CintricLocate : NSObject
 
@@ -55,9 +56,9 @@
 + (CLLocation *)getCurrentLocation;
 
 /**
- Set this to YES to enable helpful NSLogging for debugging
+ Set this to NO to turn off NSLogging. This is enabled by default.
  
- @param loggingEnabled YES enables logging
+ @param loggingEnabled NO disables logging
  */
 + (void)setDebug:(BOOL)loggingEnabled;
 

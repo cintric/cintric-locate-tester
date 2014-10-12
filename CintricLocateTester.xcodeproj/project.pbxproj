@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		115C3BC219EAED200002E40C /* Cintric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115C3BC119EAED200002E40C /* Cintric.framework */; };
+		115C3BC319EAED200002E40C /* Cintric.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 115C3BC119EAED200002E40C /* Cintric.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		11CFD04D19E66E0900CA20C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CFD04C19E66E0900CA20C7 /* main.m */; };
 		11CFD05019E66E0900CA20C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CFD04F19E66E0900CA20C7 /* AppDelegate.m */; };
 		11CFD05319E66E0900CA20C7 /* CintricLocateTester.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11CFD05119E66E0900CA20C7 /* CintricLocateTester.xcdatamodeld */; };
@@ -16,7 +18,6 @@
 		11CFD05E19E66E0900CA20C7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11CFD05C19E66E0900CA20C7 /* LaunchScreen.xib */; };
 		11CFD06A19E66E0900CA20C7 /* CintricLocateTesterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CFD06919E66E0900CA20C7 /* CintricLocateTesterTests.m */; };
 		11CFD07519E66F6900CA20C7 /* LocationUpdateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CFD07419E66F6900CA20C7 /* LocationUpdateObject.m */; };
-		11CFD07D19E68B1B00CA20C7 /* Cintric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11CFD07C19E68B1B00CA20C7 /* Cintric.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +30,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		11CFD0C219E6B76700CA20C7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				115C3BC319EAED200002E40C /* Cintric.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		115C3BC119EAED200002E40C /* Cintric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cintric.framework; sourceTree = "<group>"; };
 		11CFD04719E66E0900CA20C7 /* CintricLocateTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CintricLocateTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11CFD04B19E66E0900CA20C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11CFD04C19E66E0900CA20C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,7 +62,6 @@
 		11CFD06919E66E0900CA20C7 /* CintricLocateTesterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CintricLocateTesterTests.m; sourceTree = "<group>"; };
 		11CFD07319E66F6900CA20C7 /* LocationUpdateObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationUpdateObject.h; sourceTree = "<group>"; };
 		11CFD07419E66F6900CA20C7 /* LocationUpdateObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationUpdateObject.m; sourceTree = "<group>"; };
-		11CFD07C19E68B1B00CA20C7 /* Cintric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cintric.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11CFD07D19E68B1B00CA20C7 /* Cintric.framework in Frameworks */,
+				115C3BC219EAED200002E40C /* Cintric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,9 +83,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		115C3BC419EAEEC90002E40C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11CFD05119E66E0900CA20C7 /* CintricLocateTester.xcdatamodeld */,
+				11CFD07319E66F6900CA20C7 /* LocationUpdateObject.h */,
+				11CFD07419E66F6900CA20C7 /* LocationUpdateObject.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		115C3BC519EAEED40002E40C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				11CFD05419E66E0900CA20C7 /* ViewController.h */,
+				11CFD05519E66E0900CA20C7 /* ViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		115C3BC619EAEEFC0002E40C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11CFD05719E66E0900CA20C7 /* Main.storyboard */,
+				11CFD05C19E66E0900CA20C7 /* LaunchScreen.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		11CFD03E19E66E0900CA20C7 = {
 			isa = PBXGroup;
 			children = (
+				115C3BC119EAED200002E40C /* Cintric.framework */,
 				11CFD04919E66E0900CA20C7 /* CintricLocateTester */,
 				11CFD06619E66E0900CA20C7 /* CintricLocateTesterTests */,
 				11CFD04819E66E0900CA20C7 /* Products */,
@@ -89,17 +133,12 @@
 		11CFD04919E66E0900CA20C7 /* CintricLocateTester */ = {
 			isa = PBXGroup;
 			children = (
-				11CFD07C19E68B1B00CA20C7 /* Cintric.framework */,
 				11CFD04E19E66E0900CA20C7 /* AppDelegate.h */,
 				11CFD04F19E66E0900CA20C7 /* AppDelegate.m */,
-				11CFD05419E66E0900CA20C7 /* ViewController.h */,
-				11CFD05519E66E0900CA20C7 /* ViewController.m */,
-				11CFD05719E66E0900CA20C7 /* Main.storyboard */,
 				11CFD05A19E66E0900CA20C7 /* Images.xcassets */,
-				11CFD05C19E66E0900CA20C7 /* LaunchScreen.xib */,
-				11CFD05119E66E0900CA20C7 /* CintricLocateTester.xcdatamodeld */,
-				11CFD07319E66F6900CA20C7 /* LocationUpdateObject.h */,
-				11CFD07419E66F6900CA20C7 /* LocationUpdateObject.m */,
+				115C3BC619EAEEFC0002E40C /* View */,
+				115C3BC519EAEED40002E40C /* ViewControllers */,
+				115C3BC419EAEEC90002E40C /* Model */,
 				11CFD04A19E66E0900CA20C7 /* Supporting Files */,
 			);
 			path = CintricLocateTester;
@@ -141,6 +180,7 @@
 				11CFD04319E66E0900CA20C7 /* Sources */,
 				11CFD04419E66E0900CA20C7 /* Frameworks */,
 				11CFD04519E66E0900CA20C7 /* Resources */,
+				11CFD0C219E6B76700CA20C7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -367,6 +407,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CintricLocateTester",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CintricLocateTester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -381,6 +422,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CintricLocateTester",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CintricLocateTester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -441,6 +483,7 @@
 				11CFD06F19E66E0900CA20C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11CFD07019E66E0900CA20C7 /* Build configuration list for PBXNativeTarget "CintricLocateTesterTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +492,7 @@
 				11CFD07219E66E0900CA20C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

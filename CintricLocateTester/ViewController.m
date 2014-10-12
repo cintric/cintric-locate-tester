@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import <Cintric/CintricLocate.h>
 
+#import "LocationUpdateObject.h"
+
 @interface ViewController () <CintricLocateDelegate>
 
 @end
@@ -25,6 +27,13 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Cintric Delegate
+
+- (void)didUpdateDeviceLocation:(CLLocation *)location
+{
+    
 }
 
 @end
