@@ -9,7 +9,7 @@
 #import "LocationUpdateObject.h"
 #import <MapKit/MapKit.h>
 
-@interface LocationUpdateObject (Annotation)
+@interface LocationUpdateObject (Annotation) <MKAnnotation>
 
 @property (nonatomic) CLLocationCoordinate2D coordinate;
 @property (copy, nonatomic) NSString *title;

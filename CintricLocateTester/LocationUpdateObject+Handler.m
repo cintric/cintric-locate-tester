@@ -10,9 +10,9 @@
 
 @implementation LocationUpdateObject (Handler)
 
-+ (LocationUpdateObject *)updateObjectForLat:(float)lat lon:(float)lon;
++ (LocationUpdateObject *)updateObjectForLat:(float)lat lon:(float)lon inContext:(NSManagedObjectContext *)context;
 {
-    LocationUpdateObject *locationUpdate = [[LocationUpdateObject alloc] init];
+    LocationUpdateObject *locationUpdate = [NSEntityDescription insertNewObjectForEntityForName:@"LocationUpdateObject" inManagedObjectContext:context];
     
     locationUpdate.latitude = [NSNumber numberWithDouble:lat];
     locationUpdate.longitude = [NSNumber numberWithDouble:lon];

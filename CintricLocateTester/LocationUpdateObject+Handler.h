@@ -10,6 +10,6 @@
 
 @interface LocationUpdateObject (Handler)
 
-+ (LocationUpdateObject *)updateObjectForLat:(float)lat lon:(float)lon;
++ (LocationUpdateObject *)updateObjectForLat:(float)lat lon:(float)lon inContext:(NSManagedObjectContext *)context;
 
 @end
