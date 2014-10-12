@@ -33,7 +33,8 @@
 
 - (void)didUpdateDeviceLocation:(CLLocation *)location
 {
-    
+
 }
+
 
 @end
