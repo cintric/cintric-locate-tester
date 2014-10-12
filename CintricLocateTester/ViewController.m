@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import <Cintric/CintricLocate.h>
 
-#import "LocationUpdateObject.h"
+#import "LocationUpdateObject+Handler.h"
 
 @interface ViewController () <CintricLocateDelegate>
 
@@ -33,7 +33,8 @@
 
 - (void)didUpdateDeviceLocation:(CLLocation *)location
 {
-
+    // Create a core data object for this update
+    [LocationUpdateObject updateObjectForLat:location.coordinate.latitude lon:location.coordinate.longitude];
 }
 
 
