@@ -44,6 +44,10 @@
     
     // Move the map camera to view them
     [self.mapView showAnnotations:self.mapAnnotations animated:NO];
+    MKCoordinateSpan span = MKCoordinateSpanMake(self.mapView.region.span.latitudeDelta + .01, self.mapView.region.span.longitudeDelta + .01);
+    MKCoordinateRegion region = MKCoordinateRegionMake(self.mapView.region.center, span);
+    [self.mapView setRegion:region animated:NO];
+    
 }
 
 - (void)removeMapAnnotations:(NSArray *)annotations

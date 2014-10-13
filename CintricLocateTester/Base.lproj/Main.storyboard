@@ -109,11 +109,31 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Fs1-Yi-phQ" secondAttribute="trailing" id="235-Np-Ufj"/>
+                            <constraint firstItem="wmx-fg-sha" firstAttribute="top" secondItem="Fs1-Yi-phQ" secondAttribute="bottom" id="3AI-iK-mCF"/>
+                            <constraint firstItem="wmx-fg-sha" firstAttribute="top" secondItem="Fs1-Yi-phQ" secondAttribute="bottom" id="BDl-9J-nLr"/>
+                            <constraint firstItem="Fs1-Yi-phQ" firstAttribute="leading" secondItem="xDN-WY-IjD" secondAttribute="leading" id="BzA-6b-YB3"/>
+                            <constraint firstItem="Fs1-Yi-phQ" firstAttribute="leading" secondItem="xDN-WY-IjD" secondAttribute="leading" id="I7J-9B-36w"/>
                             <constraint firstItem="Fs1-Yi-phQ" firstAttribute="leading" secondItem="xDN-WY-IjD" secondAttribute="leading" id="K5n-df-njK"/>
+                            <constraint firstItem="Fs1-Yi-phQ" firstAttribute="top" secondItem="KbU-AD-KIY" secondAttribute="bottom" id="Rd8-VB-7VZ"/>
                             <constraint firstItem="wmx-fg-sha" firstAttribute="top" secondItem="Fs1-Yi-phQ" secondAttribute="bottom" id="fGl-J8-XTA"/>
+                            <constraint firstItem="Fs1-Yi-phQ" firstAttribute="top" secondItem="KbU-AD-KIY" secondAttribute="bottom" id="kKZ-Gt-r2a"/>
                             <constraint firstItem="Fs1-Yi-phQ" firstAttribute="top" secondItem="KbU-AD-KIY" secondAttribute="bottom" id="mGJ-hZ-pEr"/>
+                            <constraint firstAttribute="trailing" secondItem="Fs1-Yi-phQ" secondAttribute="trailing" id="mbw-ad-lng"/>
                             <constraint firstAttribute="trailing" secondItem="Fs1-Yi-phQ" secondAttribute="trailing" id="wfg-Zu-hft"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BzA-6b-YB3"/>
+                                <exclude reference="K5n-df-njK"/>
+                                <exclude reference="kKZ-Gt-r2a"/>
+                                <exclude reference="mGJ-hZ-pEr"/>
+                                <exclude reference="mbw-ad-lng"/>
+                                <exclude reference="wfg-Zu-hft"/>
+                                <exclude reference="BDl-9J-nLr"/>
+                                <exclude reference="fGl-J8-XTA"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="Fs1-Yi-phQ" id="SYB-ko-Vqa"/>
