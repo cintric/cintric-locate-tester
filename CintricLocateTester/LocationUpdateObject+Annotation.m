@@ -7,6 +7,7 @@
 //
 
 #import "LocationUpdateObject+Annotation.h"
+#import "NSDate+ToString.h"
 
 @implementation LocationUpdateObject (Annotation)
 
@@ -17,6 +18,16 @@
 - (CLLocationCoordinate2D)coordinate
 {
     return CLLocationCoordinate2DMake([self.latitude doubleValue], [self.longitude doubleValue]);
+}
+
+- (NSString *)title
+{
+    return [NSString stringWithFormat:@"%@, %@,", self.latitude, self.longitude];
+}
+
+- (NSString *)subtitle
+{
+    return [NSString stringWithFormat:@"%@ : %@", [self.timestamp relativeDateStringShort], self.timestamp];
 }
 
 @end
