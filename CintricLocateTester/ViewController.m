@@ -22,6 +22,8 @@
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
+@property (strong, nonatomic) LocationUpdateObject *currentLocationAnnotation;
+
 @end
 
 @implementation ViewController
@@ -56,9 +58,10 @@
 - (void)didUpdateDeviceLocation:(CLLocation *)location
 {
     // Create a core data object for this update
-    LocationUpdateObject *update = [LocationUpdateObject updateObjectForLat:location.coordinate.latitude lon:location.coordinate.longitude inContext:self.managedObjectContext];
-    [self addMarkerToMapView:update];
+    self.currentLocationAnnotation = [LocationUpdateObject updateObjectForLat:location.coordinate.latitude lon:location.coordinate.longitude inContext:self.managedObjectContext];
 }
+
+#pragma mark - Custom Setters / Getters
 
 - (NSManagedObjectContext *)managedObjectContext
 {
@@ -69,5 +72,14 @@
     return _managedObjectContext;
 }
 
+/// This removes the previous annotation from the map, and adds the new one
+- (void)setCurrentLocationAnnotation:(LocationUpdateObject *)currentLocationAnnotation
+{
+    if (_currentLocationAnnotation) {
+        [self.mapView removeAnnotation:_currentLocationAnnotation];
+    }
+    _currentLocationAnnotation = currentLocationAnnotation;
+    [self addMarkerToMapView:_currentLocationAnnotation];
+}
 
 @end
