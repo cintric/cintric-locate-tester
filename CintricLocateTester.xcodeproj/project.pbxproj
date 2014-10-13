@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		115829B119EBF7CD001EE32C /* UpdateHistoryMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115829B019EBF7CD001EE32C /* UpdateHistoryMapViewController.m */; };
 		115829B719EC0265001EE32C /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115829B519EC0265001EE32C /* CoreDataTableViewController.m */; };
+		115829BD19EC030F001EE32C /* LocationUpdateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115829BC19EC030F001EE32C /* LocationUpdateTableViewController.m */; };
 		115C3BC219EAED200002E40C /* Cintric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115C3BC119EAED200002E40C /* Cintric.framework */; };
 		115C3BC319EAED200002E40C /* Cintric.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 115C3BC119EAED200002E40C /* Cintric.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		115C3BC919EAF0B50002E40C /* LocationUpdateObject+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = 115C3BC819EAF0B50002E40C /* LocationUpdateObject+Handler.m */; };
@@ -54,6 +55,8 @@
 		115829B019EBF7CD001EE32C /* UpdateHistoryMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateHistoryMapViewController.m; sourceTree = "<group>"; };
 		115829B519EC0265001EE32C /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
 		115829B619EC0265001EE32C /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		115829BB19EC030F001EE32C /* LocationUpdateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationUpdateTableViewController.h; path = ../LocationUpdateTableViewController.h; sourceTree = "<group>"; };
+		115829BC19EC030F001EE32C /* LocationUpdateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationUpdateTableViewController.m; path = ../LocationUpdateTableViewController.m; sourceTree = "<group>"; };
 		115C3BC119EAED200002E40C /* Cintric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cintric.framework; sourceTree = "<group>"; };
 		115C3BC719EAF0B50002E40C /* LocationUpdateObject+Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LocationUpdateObject+Handler.h"; sourceTree = "<group>"; };
 		115C3BC819EAF0B50002E40C /* LocationUpdateObject+Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LocationUpdateObject+Handler.m"; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 				115829B019EBF7CD001EE32C /* UpdateHistoryMapViewController.m */,
 				115829B619EC0265001EE32C /* CoreDataTableViewController.h */,
 				115829B519EC0265001EE32C /* CoreDataTableViewController.m */,
+				115829BB19EC030F001EE32C /* LocationUpdateTableViewController.h */,
+				115829BC19EC030F001EE32C /* LocationUpdateTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115829BD19EC030F001EE32C /* LocationUpdateTableViewController.m in Sources */,
 				115C3BCF19EBF12A0002E40C /* NSDate+ToString.m in Sources */,
 				11CFD07519E66F6900CA20C7 /* LocationUpdateObject.m in Sources */,
 				115C3BC919EAF0B50002E40C /* LocationUpdateObject+Handler.m in Sources */,
