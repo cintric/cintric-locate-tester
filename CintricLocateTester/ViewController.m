@@ -62,7 +62,7 @@
     // Create a core data object for this update
     self.currentLocationAnnotation = [LocationUpdateObject updateObjectForLat:location.coordinate.latitude lon:location.coordinate.longitude inContext:self.managedObjectContext];
     
-    // For something liteweight like this we might as well always save
+    // For something lightweight like this we might as well always save
     [self.managedObjectContext save:nil];
 }
 
