@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="1124" y="260"/>
         </scene>
-        <!--View Controller-->
+        <!--Update History Map View Controller-->
         <scene sceneID="bO3-WP-VCh">
             <objects>
-                <viewController id="S26-eM-bXx" sceneMemberID="viewController">
+                <viewController id="S26-eM-bXx" customClass="UpdateHistoryMapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KbU-AD-KIY"/>
                         <viewControllerLayoutGuide type="bottom" id="wmx-fg-sha"/>
