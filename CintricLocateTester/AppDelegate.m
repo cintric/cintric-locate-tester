@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-#warning Change this api key to your active api key from cintric.com
+//#warning Change this api key to your active api key from cintric.com
     [CintricLocate initWithApiKey:@"67ab7f2a606a9e2510744d51a1bd8e6c016fa465d6a517aacf03ce7e8d696c56"];
     
     [CintricLocate setUniqueIdForUser:@"example user"];

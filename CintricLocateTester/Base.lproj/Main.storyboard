@@ -115,6 +115,9 @@
                             <constraint firstAttribute="trailing" secondItem="Fs1-Yi-phQ" secondAttribute="trailing" id="wfg-Zu-hft"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="Fs1-Yi-phQ" id="SYB-ko-Vqa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZi-zc-2Mp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
