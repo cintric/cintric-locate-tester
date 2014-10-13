@@ -22,7 +22,7 @@
 
 - (NSString *)title
 {
-    return [NSString stringWithFormat:@"%@, %@,", self.latitude, self.longitude];
+    return [NSString stringWithFormat:@"%@, %@", self.latitude, self.longitude];
 }
 
 - (NSString *)subtitle
