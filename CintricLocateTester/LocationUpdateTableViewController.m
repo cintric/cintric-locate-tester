@@ -61,7 +61,7 @@
     _managedObjectContext = managedObjectContext;
     
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"LocationUpdateObject"];
-    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"timestamp" ascending:YES]];
+    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"timestamp" ascending:NO]];
     
     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request
                                                                         managedObjectContext:managedObjectContext

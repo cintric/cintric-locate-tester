@@ -18,9 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-//#warning Change this api key to your active api key from cintric.com
-    [CintricLocate initWithApiKey:@"67ab7f2a606a9e2510744d51a1bd8e6c016fa465d6a517aacf03ce7e8d696c56"];
+#warning Change this api key to your active api key from cintric.com
+    [CintricLocate initWithApiKey:@"YOUR_API_KEY_HERE"];
     
+    // If you have unique ID's for you user call this to set it (for example when they create an account, or log in with facebook)
     [CintricLocate setUniqueIdForUser:@"example user"];
     
     // Override point for customization after application launch.

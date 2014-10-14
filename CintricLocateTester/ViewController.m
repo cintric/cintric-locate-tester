@@ -12,7 +12,7 @@
 #import <MapKit/MapKit.h>
 
 #import "LocationUpdateObject+Handler.h"
-#import "LocationUpdateObject+Annotation.m"
+#import "LocationUpdateObject+Annotation.h"
 
 @interface ViewController () <CintricLocateDelegate>
 

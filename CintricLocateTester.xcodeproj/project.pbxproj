@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1155F2A219ED186C00E88DC8 /* Cintric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1155F2A119ED186C00E88DC8 /* Cintric.framework */; };
+		1155F2A319ED186C00E88DC8 /* Cintric.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1155F2A119ED186C00E88DC8 /* Cintric.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		115829B119EBF7CD001EE32C /* UpdateHistoryMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115829B019EBF7CD001EE32C /* UpdateHistoryMapViewController.m */; };
 		115829B719EC0265001EE32C /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115829B519EC0265001EE32C /* CoreDataTableViewController.m */; };
-		115829BD19EC030F001EE32C /* LocationUpdateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115829BC19EC030F001EE32C /* LocationUpdateTableViewController.m */; };
-		115C3BC219EAED200002E40C /* Cintric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115C3BC119EAED200002E40C /* Cintric.framework */; };
-		115C3BC319EAED200002E40C /* Cintric.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 115C3BC119EAED200002E40C /* Cintric.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		115C3BC919EAF0B50002E40C /* LocationUpdateObject+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = 115C3BC819EAF0B50002E40C /* LocationUpdateObject+Handler.m */; };
-		115C3BCC19EAF4BE0002E40C /* LocationUpdateObject+Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 115C3BCB19EAF4BE0002E40C /* LocationUpdateObject+Annotation.m */; };
 		115C3BCF19EBF12A0002E40C /* NSDate+ToString.m in Sources */ = {isa = PBXBuildFile; fileRef = 115C3BCE19EBF12A0002E40C /* NSDate+ToString.m */; };
+		1178D4F519ED19E80028261B /* LocationUpdateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1178D4F319ED19E80028261B /* LocationUpdateTableViewController.m */; };
+		1178D4F819ED1A0D0028261B /* LocationUpdateObject+Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1178D4F719ED1A0D0028261B /* LocationUpdateObject+Annotation.m */; };
 		11CFD04D19E66E0900CA20C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CFD04C19E66E0900CA20C7 /* main.m */; };
 		11CFD05019E66E0900CA20C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CFD04F19E66E0900CA20C7 /* AppDelegate.m */; };
 		11CFD05319E66E0900CA20C7 /* CintricLocateTester.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11CFD05119E66E0900CA20C7 /* CintricLocateTester.xcdatamodeld */; };
@@ -43,7 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				115C3BC319EAED200002E40C /* Cintric.framework in Embed Frameworks */,
+				1155F2A319ED186C00E88DC8 /* Cintric.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,19 +51,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1155F2A119ED186C00E88DC8 /* Cintric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cintric.framework; sourceTree = "<group>"; };
 		115829AF19EBF7CD001EE32C /* UpdateHistoryMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateHistoryMapViewController.h; sourceTree = "<group>"; };
 		115829B019EBF7CD001EE32C /* UpdateHistoryMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateHistoryMapViewController.m; sourceTree = "<group>"; };
 		115829B519EC0265001EE32C /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
 		115829B619EC0265001EE32C /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
-		115829BB19EC030F001EE32C /* LocationUpdateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationUpdateTableViewController.h; path = ../LocationUpdateTableViewController.h; sourceTree = "<group>"; };
-		115829BC19EC030F001EE32C /* LocationUpdateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationUpdateTableViewController.m; path = ../LocationUpdateTableViewController.m; sourceTree = "<group>"; };
-		115C3BC119EAED200002E40C /* Cintric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cintric.framework; sourceTree = "<group>"; };
 		115C3BC719EAF0B50002E40C /* LocationUpdateObject+Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LocationUpdateObject+Handler.h"; sourceTree = "<group>"; };
 		115C3BC819EAF0B50002E40C /* LocationUpdateObject+Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LocationUpdateObject+Handler.m"; sourceTree = "<group>"; };
-		115C3BCA19EAF4BE0002E40C /* LocationUpdateObject+Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LocationUpdateObject+Annotation.h"; sourceTree = "<group>"; };
-		115C3BCB19EAF4BE0002E40C /* LocationUpdateObject+Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LocationUpdateObject+Annotation.m"; sourceTree = "<group>"; };
 		115C3BCD19EBF12A0002E40C /* NSDate+ToString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ToString.h"; sourceTree = "<group>"; };
 		115C3BCE19EBF12A0002E40C /* NSDate+ToString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ToString.m"; sourceTree = "<group>"; };
+		1178D4F319ED19E80028261B /* LocationUpdateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationUpdateTableViewController.m; sourceTree = "<group>"; };
+		1178D4F419ED19E80028261B /* LocationUpdateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationUpdateTableViewController.h; sourceTree = "<group>"; };
+		1178D4F619ED1A0D0028261B /* LocationUpdateObject+Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LocationUpdateObject+Annotation.h"; sourceTree = "<group>"; };
+		1178D4F719ED1A0D0028261B /* LocationUpdateObject+Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LocationUpdateObject+Annotation.m"; sourceTree = "<group>"; };
 		11CFD04719E66E0900CA20C7 /* CintricLocateTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CintricLocateTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11CFD04B19E66E0900CA20C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11CFD04C19E66E0900CA20C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				115C3BC219EAED200002E40C /* Cintric.framework in Frameworks */,
+				1155F2A219ED186C00E88DC8 /* Cintric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,8 +109,8 @@
 				11CFD07419E66F6900CA20C7 /* LocationUpdateObject.m */,
 				115C3BC719EAF0B50002E40C /* LocationUpdateObject+Handler.h */,
 				115C3BC819EAF0B50002E40C /* LocationUpdateObject+Handler.m */,
-				115C3BCA19EAF4BE0002E40C /* LocationUpdateObject+Annotation.h */,
-				115C3BCB19EAF4BE0002E40C /* LocationUpdateObject+Annotation.m */,
+				1178D4F619ED1A0D0028261B /* LocationUpdateObject+Annotation.h */,
+				1178D4F719ED1A0D0028261B /* LocationUpdateObject+Annotation.m */,
 				115C3BCD19EBF12A0002E40C /* NSDate+ToString.h */,
 				115C3BCE19EBF12A0002E40C /* NSDate+ToString.m */,
 			);
@@ -126,8 +126,8 @@
 				115829B019EBF7CD001EE32C /* UpdateHistoryMapViewController.m */,
 				115829B619EC0265001EE32C /* CoreDataTableViewController.h */,
 				115829B519EC0265001EE32C /* CoreDataTableViewController.m */,
-				115829BB19EC030F001EE32C /* LocationUpdateTableViewController.h */,
-				115829BC19EC030F001EE32C /* LocationUpdateTableViewController.m */,
+				1178D4F319ED19E80028261B /* LocationUpdateTableViewController.m */,
+				1178D4F419ED19E80028261B /* LocationUpdateTableViewController.h */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -144,7 +144,7 @@
 		11CFD03E19E66E0900CA20C7 = {
 			isa = PBXGroup;
 			children = (
-				115C3BC119EAED200002E40C /* Cintric.framework */,
+				1155F2A119ED186C00E88DC8 /* Cintric.framework */,
 				11CFD04919E66E0900CA20C7 /* CintricLocateTester */,
 				11CFD06619E66E0900CA20C7 /* CintricLocateTesterTests */,
 				11CFD04819E66E0900CA20C7 /* Products */,
@@ -306,17 +306,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				115829BD19EC030F001EE32C /* LocationUpdateTableViewController.m in Sources */,
+				1178D4F519ED19E80028261B /* LocationUpdateTableViewController.m in Sources */,
 				115C3BCF19EBF12A0002E40C /* NSDate+ToString.m in Sources */,
 				11CFD07519E66F6900CA20C7 /* LocationUpdateObject.m in Sources */,
 				115C3BC919EAF0B50002E40C /* LocationUpdateObject+Handler.m in Sources */,
 				11CFD05019E66E0900CA20C7 /* AppDelegate.m in Sources */,
 				115829B719EC0265001EE32C /* CoreDataTableViewController.m in Sources */,
 				11CFD04D19E66E0900CA20C7 /* main.m in Sources */,
+				1178D4F819ED1A0D0028261B /* LocationUpdateObject+Annotation.m in Sources */,
 				11CFD05619E66E0900CA20C7 /* ViewController.m in Sources */,
 				11CFD05319E66E0900CA20C7 /* CintricLocateTester.xcdatamodeld in Sources */,
 				115829B119EBF7CD001EE32C /* UpdateHistoryMapViewController.m in Sources */,
-				115C3BCC19EAF4BE0002E40C /* LocationUpdateObject+Annotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
