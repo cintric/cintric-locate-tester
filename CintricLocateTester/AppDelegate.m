@@ -18,7 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-#warning Change this api key to your active api key from cintric.com
+    #warning Change this api key to your active api key from cintric.com
+    // Sign up for a developer account at: https://www.cintric.com/register
     [CintricLocate initWithApiKey:@"YOUR_API_KEY_HERE"];
     
     // If you have unique ID's for you user call this to set it (for example when they create an account, or log in with facebook)
