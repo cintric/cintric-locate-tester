@@ -8,13 +8,13 @@
 
 #import "ViewController.h"
 #import "AppDelegate.h"
-#import <Cintric/CintricLocate.h>
+#import <Cintric/CintricFind.h>
 #import <MapKit/MapKit.h>
 
 #import "LocationUpdateObject+Handler.h"
 #import "LocationUpdateObject+Annotation.h"
 
-@interface ViewController () <CintricLocateDelegate>
+@interface ViewController () <CintricFindDelegate>
 
 // From storyboard
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
@@ -32,8 +32,7 @@
 {
     [super viewDidLoad];
     
-    [CintricLocate setDelegate:self];
-    
+    [CintricFind setDelegate:self];    
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,7 +51,7 @@
 
 - (IBAction)updateLocationButtonPressed:(id)sender
 {
-    [CintricLocate updateLocation];
+    [CintricFind updateLocation];
 }
 
 #pragma mark - Cintric Delegate

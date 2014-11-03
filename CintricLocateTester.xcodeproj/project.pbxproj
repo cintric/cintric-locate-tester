@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1155F2A219ED186C00E88DC8 /* Cintric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1155F2A119ED186C00E88DC8 /* Cintric.framework */; };
-		1155F2A319ED186C00E88DC8 /* Cintric.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1155F2A119ED186C00E88DC8 /* Cintric.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1105E6D61A0727C60087F6A2 /* Cintric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1105E6D51A0727C60087F6A2 /* Cintric.framework */; };
+		1105E6D71A0727C60087F6A2 /* Cintric.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1105E6D51A0727C60087F6A2 /* Cintric.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		115829B119EBF7CD001EE32C /* UpdateHistoryMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115829B019EBF7CD001EE32C /* UpdateHistoryMapViewController.m */; };
 		115829B719EC0265001EE32C /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115829B519EC0265001EE32C /* CoreDataTableViewController.m */; };
 		115C3BC919EAF0B50002E40C /* LocationUpdateObject+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = 115C3BC819EAF0B50002E40C /* LocationUpdateObject+Handler.m */; };
@@ -43,7 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1155F2A319ED186C00E88DC8 /* Cintric.framework in Embed Frameworks */,
+				1105E6D71A0727C60087F6A2 /* Cintric.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,7 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1155F2A119ED186C00E88DC8 /* Cintric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cintric.framework; sourceTree = "<group>"; };
+		1105E6D51A0727C60087F6A2 /* Cintric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cintric.framework; sourceTree = "<group>"; };
 		115829AF19EBF7CD001EE32C /* UpdateHistoryMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateHistoryMapViewController.h; sourceTree = "<group>"; };
 		115829B019EBF7CD001EE32C /* UpdateHistoryMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateHistoryMapViewController.m; sourceTree = "<group>"; };
 		115829B519EC0265001EE32C /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1155F2A219ED186C00E88DC8 /* Cintric.framework in Frameworks */,
+				1105E6D61A0727C60087F6A2 /* Cintric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,8 +126,8 @@
 				115829B019EBF7CD001EE32C /* UpdateHistoryMapViewController.m */,
 				115829B619EC0265001EE32C /* CoreDataTableViewController.h */,
 				115829B519EC0265001EE32C /* CoreDataTableViewController.m */,
-				1178D4F319ED19E80028261B /* LocationUpdateTableViewController.m */,
 				1178D4F419ED19E80028261B /* LocationUpdateTableViewController.h */,
+				1178D4F319ED19E80028261B /* LocationUpdateTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -144,7 +144,7 @@
 		11CFD03E19E66E0900CA20C7 = {
 			isa = PBXGroup;
 			children = (
-				1155F2A119ED186C00E88DC8 /* Cintric.framework */,
+				1105E6D51A0727C60087F6A2 /* Cintric.framework */,
 				11CFD04919E66E0900CA20C7 /* CintricLocateTester */,
 				11CFD06619E66E0900CA20C7 /* CintricLocateTesterTests */,
 				11CFD04819E66E0900CA20C7 /* Products */,
@@ -440,14 +440,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CintricLocateTester",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CintricLocateTester/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -455,14 +459,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CintricLocateTester",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CintricLocateTester/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

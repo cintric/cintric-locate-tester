@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <Cintric/CintricLocate.h>
+#import <Cintric/CintricFind.h>
 
 @interface AppDelegate ()
 
@@ -18,12 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    #warning Change this api key to your active api key from cintric.com
+    #warning Change this api key and secret to your active api key and secret from cintric.com
     // Sign up for a developer account at: https://www.cintric.com/register
-    [CintricLocate initWithApiKey:@"YOUR_API_KEY_HERE"];
+    [CintricFind initWithApiKey:@"YOUR_API_KEY_HERE" andSecret:@"YOUR_SECRET_HERE"];
     
     // If you have unique ID's for you user call this to set it (for example when they create an account, or log in with facebook)
-    [CintricLocate setUniqueIdForUser:@"example user"];
+    [CintricFind setUniqueIdForUser:@"exampleId"];
     
     // Override point for customization after application launch.
     return YES;
