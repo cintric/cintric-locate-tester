@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <Cintric/CintricFind.h>
+#import <Cintric/Cintric.h>
 
 @interface AppDelegate ()
 

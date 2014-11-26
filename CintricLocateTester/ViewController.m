@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "AppDelegate.h"
-#import <Cintric/CintricFind.h>
+#import <Cintric/Cintric.h>
 #import <MapKit/MapKit.h>
 
 #import "LocationUpdateObject+Handler.h"
