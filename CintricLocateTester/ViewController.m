@@ -32,7 +32,7 @@
 {
     [super viewDidLoad];
     
-    [CintricFind setDelegate:self];    
+    [CintricFind setDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning
