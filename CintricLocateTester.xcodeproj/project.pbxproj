@@ -11,8 +11,6 @@
 		115829B719EC0265001EE32C /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115829B519EC0265001EE32C /* CoreDataTableViewController.m */; };
 		115C3BC919EAF0B50002E40C /* LocationUpdateObject+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = 115C3BC819EAF0B50002E40C /* LocationUpdateObject+Handler.m */; };
 		115C3BCF19EBF12A0002E40C /* NSDate+ToString.m in Sources */ = {isa = PBXBuildFile; fileRef = 115C3BCE19EBF12A0002E40C /* NSDate+ToString.m */; };
-		117447981AB1E4BE003C2F35 /* Cintric.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 117447961AB1E4BE003C2F35 /* Cintric.bundle */; };
-		117447991AB1E4BE003C2F35 /* Cintric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117447971AB1E4BE003C2F35 /* Cintric.framework */; };
 		1178D4F519ED19E80028261B /* LocationUpdateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1178D4F319ED19E80028261B /* LocationUpdateTableViewController.m */; };
 		1178D4F819ED1A0D0028261B /* LocationUpdateObject+Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1178D4F719ED1A0D0028261B /* LocationUpdateObject+Annotation.m */; };
 		11CFD04D19E66E0900CA20C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CFD04C19E66E0900CA20C7 /* main.m */; };
@@ -24,6 +22,8 @@
 		11CFD05E19E66E0900CA20C7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11CFD05C19E66E0900CA20C7 /* LaunchScreen.xib */; };
 		11CFD06A19E66E0900CA20C7 /* CintricLocateTesterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CFD06919E66E0900CA20C7 /* CintricLocateTesterTests.m */; };
 		11CFD07519E66F6900CA20C7 /* LocationUpdateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CFD07419E66F6900CA20C7 /* LocationUpdateObject.m */; };
+		11D4BF5D1AB9F838001FD9DF /* Cintric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D4BF5B1AB9F838001FD9DF /* Cintric.framework */; };
+		11D4BF5E1AB9F838001FD9DF /* Cintric.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 11D4BF5C1AB9F838001FD9DF /* Cintric.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +58,6 @@
 		115C3BC819EAF0B50002E40C /* LocationUpdateObject+Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LocationUpdateObject+Handler.m"; sourceTree = "<group>"; };
 		115C3BCD19EBF12A0002E40C /* NSDate+ToString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ToString.h"; sourceTree = "<group>"; };
 		115C3BCE19EBF12A0002E40C /* NSDate+ToString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ToString.m"; sourceTree = "<group>"; };
-		117447961AB1E4BE003C2F35 /* Cintric.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Cintric.bundle; sourceTree = "<group>"; };
-		117447971AB1E4BE003C2F35 /* Cintric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cintric.framework; sourceTree = "<group>"; };
 		1178D4F319ED19E80028261B /* LocationUpdateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationUpdateTableViewController.m; sourceTree = "<group>"; };
 		1178D4F419ED19E80028261B /* LocationUpdateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationUpdateTableViewController.h; sourceTree = "<group>"; };
 		1178D4F619ED1A0D0028261B /* LocationUpdateObject+Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LocationUpdateObject+Annotation.h"; sourceTree = "<group>"; };
@@ -80,6 +78,8 @@
 		11CFD06919E66E0900CA20C7 /* CintricLocateTesterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CintricLocateTesterTests.m; sourceTree = "<group>"; };
 		11CFD07319E66F6900CA20C7 /* LocationUpdateObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationUpdateObject.h; sourceTree = "<group>"; };
 		11CFD07419E66F6900CA20C7 /* LocationUpdateObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationUpdateObject.m; sourceTree = "<group>"; };
+		11D4BF5B1AB9F838001FD9DF /* Cintric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cintric.framework; sourceTree = "<group>"; };
+		11D4BF5C1AB9F838001FD9DF /* Cintric.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Cintric.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				117447991AB1E4BE003C2F35 /* Cintric.framework in Frameworks */,
+				11D4BF5D1AB9F838001FD9DF /* Cintric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,8 +144,8 @@
 		11CFD03E19E66E0900CA20C7 = {
 			isa = PBXGroup;
 			children = (
-				117447961AB1E4BE003C2F35 /* Cintric.bundle */,
-				117447971AB1E4BE003C2F35 /* Cintric.framework */,
+				11D4BF5B1AB9F838001FD9DF /* Cintric.framework */,
+				11D4BF5C1AB9F838001FD9DF /* Cintric.bundle */,
 				11CFD04919E66E0900CA20C7 /* CintricLocateTester */,
 				11CFD06619E66E0900CA20C7 /* CintricLocateTesterTests */,
 				11CFD04819E66E0900CA20C7 /* Products */,
@@ -290,7 +290,7 @@
 			files = (
 				11CFD05919E66E0900CA20C7 /* Main.storyboard in Resources */,
 				11CFD05E19E66E0900CA20C7 /* LaunchScreen.xib in Resources */,
-				117447981AB1E4BE003C2F35 /* Cintric.bundle in Resources */,
+				11D4BF5E1AB9F838001FD9DF /* Cintric.bundle in Resources */,
 				11CFD05B19E66E0900CA20C7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
