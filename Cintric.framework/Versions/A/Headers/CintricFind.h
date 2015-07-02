@@ -78,22 +78,6 @@
 + (void)setDebug:(BOOL)loggingEnabled;
 
 /**
- Enables privacy mode - no location information is sent to our servers or shared in any way (this is disabled by default)
- 
- @discussion If you want to enable privacy mode, call this method immediatly after initalizing Cintric
-             Make sure this method is ALWAYS called after initWithApiKey:andSecret: if you want privacy mode to stay on
-             Calling this method will disable some Cintric Learn and Act functionality.
- 
- @code
- [CintricFind initWithApiKey:@"YOUR_API_KEY_HERE" andSecret:@"YOUR_SECRET_HERE"];
- [CintricFind enablePrivacyMode:YES];
- @endcode
- 
- @param shouldEnablePrivacy Set this to YES to enable privacy mode
- */
-+ (void)enablePrivacyMode:(BOOL)shouldEnablePrivacy;
-
-/**
  Depricated. This method still works however it is recommended to use
  [CintricUserProfile setUserCustomId:]
  
