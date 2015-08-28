@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Cintric/Cintric.h>
+#import <AdSupport/AdSupport.h>
 
 @interface AppDelegate ()
 
@@ -20,13 +21,20 @@
     
     #warning Change this api key and secret to your active api key and secret from cintric.com
     // Sign up for a developer account at: https://www.cintric.com/register
-    [Cintric initWithApiKey:@"YOUR_API_KEY_HERE" andSecret:@"YOUR_SECRET_HERE"];
+    [Cintric initWithApiKey:@"YOUR_SDK_KEY_HERE" andSecret:@"YOUR_SECRET_HERE"];
     
     // Call this to start the location tracking (this will bring up the permission request for the user)
     [CintricFind updateLocation];
     
     // If you have unique ID's for you user call this to set it (for example when they create an account, or log in with facebook)
     [CintricUserProfile setUserCustomId:@"exampleId"];
+    
+    
+    // If your app enables advertising identifier on the appstore you should include this code in your project
+    if ([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {
+        NSString *adId = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+        [CintricUserProfile setUserAdvertisingIdentifier:adId];
+    }
     
     return YES;
 

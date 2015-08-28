@@ -14,7 +14,7 @@
  It is highly recommended to set fields for you users if you have that information.
  You should always call updateFaceBookUser if you use facebook login. This will allow you to better view your users on the web panel.
  It will also help with demographics and profiling of users, making the rules engine, and demographic information much better.
- Any information you share will be securely stored, nerver shared and only accessible by you.
+ Any information you share will be securely stored for your use.
  */
 @interface CintricUserProfile : NSObject
 
@@ -24,6 +24,7 @@
 @property (strong, readonly) NSString *customId;
 @property (strong, readonly) NSString *cintricId;
 @property (strong, readonly) NSString *facebookId;
+@property (strong, readonly) NSString *advertisingIdentifier;
 @property (strong, readonly) id customJson;
 @property (readonly) CLLocationCoordinate2D currentUserLocation;
 
@@ -43,6 +44,21 @@
 + (void)setUserFacebookId:(NSString *)facebookId;
 
 /**
+ If your app uses ASIdentifierManager you should call this method with the adId obtained from this method:
+ @code
+ #import <AdSupport/AdSupport.h>
+ 
+  if ([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {
+    NSString *adId = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+    [CintricUserProfile setUserAdvertisingIdentifier:adId];
+  }
+ @endcode
+ 
+ Setting the advertising identifier allows you to attribute advertising campaigns with user locations and track conversions.
+ */
++ (void)setUserAdvertisingIdentifier:(NSString *)adId;
+
+/**
  If you want to save additional custom information about your user, especially to view in the web panel, use this method.
  
  @param customJson A valid JSON object of type NSArray or NSDictionary.
@@ -52,7 +68,7 @@
 /**
  Automatically send information from facebook login to our server.
  It is highly recommended to call this method if you use facebook login. This information will be available to you in the web browser.
- All information is securely stored, never shared, and only available to you.
+ All information is securely stored for your use.
  
  When your user logs in with facebook, call this method with the id<FBGraphUser> object passed to you by the facebook sdk.
  
@@ -72,7 +88,7 @@
  Using this method will allow you to view additional information about your users on the web panel.
  This greatly improves Cintric's ability to learn about who your users friends are, when, where, and for how long they spend time together.
  
- All information is securely stored, never shared, and only available to you.
+ All information is securely stored for your use.
  */
 + (void)syncAddresssBook;
 
