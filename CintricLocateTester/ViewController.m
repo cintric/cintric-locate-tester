@@ -14,7 +14,7 @@
 #import "LocationUpdateObject+Handler.h"
 #import "LocationUpdateObject+Annotation.h"
 
-@interface ViewController () <CintricFindDelegate>
+@interface ViewController () <CintricDelegate>
 
 // From storyboard
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
@@ -32,7 +32,7 @@
 {
     [super viewDidLoad];
     
-    [CintricFind setDelegate:self];
+    [Cintric setDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,7 +56,7 @@
 
 #pragma mark - Cintric Delegate
 
-- (void)didUpdateDeviceLocation:(CLLocation *)location
+- (void)didUpdateLocation:(CLLocation *)location
 {
     // Create a core data object for this update
     self.currentLocationAnnotation = [LocationUpdateObject updateObjectForLat:location.coordinate.latitude lon:location.coordinate.longitude inContext:self.managedObjectContext];
