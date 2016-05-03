@@ -27,6 +27,10 @@
     // This does not need to be in didFinishLaunchingWithOptions, as long as it is called once tracking will be enabled
     [Cintric startAlwaysModeAndRequestPermission];
     
+    // If you do not have background location tracking you can use this method instead.
+//    [Cintric startWhileInUseModeAndRequestPermission];
+    
+    // Example of syncing a custom id with cintric for the user (in this case it is just their IDFA, but you may want to use their username or database ID).
     if ([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {
         NSString *adId = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
         [Cintric setUserCustomId:adId];

@@ -64,6 +64,8 @@
  */
 + (void)startAlwaysModeAndRequestPermission;
 
++ (void)startWhileInUseModeAndRequestPermission;
+
 /**
  Cintric always mode will by default track user visits and build user profile / analytics for you in the dashboard.
  If you need location tracking with callbacks in real time and for intermediary locations enable this method.
