@@ -64,6 +64,15 @@
  */
 + (void)startAlwaysModeAndRequestPermission;
 
+/**
+ Call this method when you are ready to ask your user for location permission.
+ This will cause the app to update location when entering the foreground.
+ You will receive callbacks via the delegate method didUpdateLocation: (declared in CintricDelegate.h)
+ If you need an additional location update call:
+ @code
+    [Cintric updateLocation];
+ @endcode
+ */
 + (void)startWhileInUseModeAndRequestPermission;
 
 /**
